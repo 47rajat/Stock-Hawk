@@ -6,6 +6,9 @@
     <com.db.chart.view.LineChartView
         xmlns:chart="http://schemas.android.com/apk/res-auto"
         android:id="@+id/linechart"
+        chart:chart_axisThickness="@dimen/line_graph_thickness"
+        chart:chart_axisBorderSpacing="@dimen/line_graph_border_spacing"
+        chart:chart_axisColor="@color/material_green_700"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
