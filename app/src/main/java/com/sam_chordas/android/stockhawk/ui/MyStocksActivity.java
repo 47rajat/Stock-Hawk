@@ -221,6 +221,7 @@ public class MyStocksActivity extends AppCompatActivity implements LoaderManager
   @Override
   public void onLoadFinished(Loader<Cursor> loader, Cursor data){
     mCursorAdapter.swapCursor(data);
+    Utils.updateWidget(this);
     mCursor = data;
   }
 

@@ -127,7 +127,7 @@ public class StockTaskService extends GcmTaskService{
             if(Utils.quoteJsonToContentVals(getResponse).size() != 0) {
                 mContext.getContentResolver().applyBatch(QuoteProvider.AUTHORITY,
                         Utils.quoteJsonToContentVals(getResponse));
-                Utils.updateWidget(mContext);
+//                Utils.updateWidget(mContext);
 
             }
         }catch (RemoteException | OperationApplicationException e){
